@@ -33,4 +33,23 @@ button = findViewById(R.id.mybutton)
 
 Cevap:
 
+XML dosyasında tools özellikleri(attribute), uygulamamızın tasarımda nasıl göründüğü veya compile edilince nasıl görüneceği gibi davranışları uygulama build edilmeden görebilmemize olanak sağlar. Bize dizayn kısmında yardımcı olan özelliklerdir. Uygulama build edildiğinde bu özellikler kaldırılır ve APK dosyamız etkilenmez. 
 
+Tools namespace ile gelen özellikleri kullanabilmek için her xml dosyasının root etiketine
+```
+xmlns:tools="http://schemas.android.com/tools"
+```
+eklenir.
+
+Örneğin bir layout tasarımında arkaplanı daha görünür olması için değiştirmek istiyoruz ama bu değişikliğin uygulamada kalıcı bir değişiklik olmasını istemiyoruz.
+```
+android:background="@color/<some-color>"
+```
+
+Bu şekilde kullandığımızda bu değişikliği geri almayı unutabiliriz. 
+
+```
+tools:background="@color/<some-color>"
+```
+
+Tools özelliğini kullandığımızda bu yaptığımız değişiklik Android Stüdyo'da lokal olarak yapılmış olur ve uygulama APKsını etkilemez.
