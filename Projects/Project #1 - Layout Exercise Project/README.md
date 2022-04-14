@@ -4,8 +4,7 @@
 
 **Given design:** 
 
-![Layout 1](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/layout_1.png)
-![Layout 2](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/layout_2.png)
-![Layout 3](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/layout_3.png)
+![Layout](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/given_layout.png)
+
 
 **My work:** 
