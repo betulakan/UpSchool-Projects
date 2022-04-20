@@ -1,6 +1,7 @@
 # Layout Exercise Project
 
 **Case:** The case is to create the following layout. First, I uploaded the given design folder to Figma. Then, I created the layout similar to the given design. 
+For the layout on the left, I used SpannableString to create different colored text in one textView. 
 
 **Given design:** 
 
