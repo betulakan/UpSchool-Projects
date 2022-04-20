@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+    <ImageView
+        android:id="@+id/premiumImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_premium_llustration" />
+
+    <TextView
+        android:id="@+id/premiumText"
+        style="@style/EntryTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/get_unlimited_access"
+        app:layout_constraintEnd_toEndOf="@+id/premiumImageView"
+        app:layout_constraintStart_toStartOf="@+id/premiumImageView"
+        app:layout_constraintTop_toBottomOf="@+id/premiumImageView" />
+
+    <TextView
+        android:id="@+id/monthlyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/ic_premiumrectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premiumText" />
+
+    <TextView
+        android:id="@+id/yearlyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/ic_premiumrectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premiumText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="191dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#2C2B47"
+        android:fontFamily="@font/acme"
+        android:textSize="18dp"
+        android:text="Go Premium"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yearlyTextView"
+        app:layout_constraintStart_toStartOf="@+id/monthlyTextView" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_premiummonthly"
+        android:fontFamily="@font/acme"
+        android:text="Monthly"
+        android:textColor="#FFFFFF"
+        android:paddingStart="7dp"
+        android:textSize="11sp"
+        android:paddingTop="2dp"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyTextView"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/monthlyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/premiumText" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="54dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_premiumyearly"
+        android:fontFamily="@font/acme"
+        android:paddingStart="7dp"
+        android:paddingTop="2dp"
+        android:text="Yearly"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/yearlyTextView"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/yearlyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/premiumText"
+
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:text="$11.99"
+        app:layout_constraintBottom_toBottomOf="@+id/monthlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyTextView"
+        app:layout_constraintStart_toStartOf="@+id/monthlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/monthlyTextView"
+        style="@style/premiumFee" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:text="$4.99"
+        app:layout_constraintBottom_toBottomOf="@+id/yearlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/yearlyTextView"
+        app:layout_constraintStart_toStartOf="@+id/yearlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/yearlyTextView"
+        style="@style/premiumFee" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="44dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:textSize="13sp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/monthlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/monthlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/monthlyTextView"
+        app:layout_constraintVertical_bias="1.0"
+         />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginBottom="19dp"
+        android:textSize="13sp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/monthlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/monthlyTextView"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="@+id/monthlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/monthlyTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="44dp"
+        android:textSize="13sp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/yearlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/yearlyTextView"
+        app:layout_constraintHorizontal_bias="0.017"
+        app:layout_constraintStart_toStartOf="@+id/yearlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/yearlyTextView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="19dp"
+        android:text=""
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/yearlyTextView"
+        app:layout_constraintEnd_toEndOf="@+id/yearlyTextView"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="@+id/yearlyTextView"
+        app:layout_constraintTop_toTopOf="@+id/yearlyTextView"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

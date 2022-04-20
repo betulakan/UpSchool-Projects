@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="EntryTitleStyle">
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#2C2B47</item>
+        <item name="android:textSize">39sp</item>
+    </style>
+
+    <style name="HomeSubtitle">
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#B9B8C6</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="StartInputStyle">
+        <item name="android:background">@drawable/ic_rectangle</item>
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textColorHint">#2C2B47</item>
+    </style>
+
+    <style name="premiumFee">
+        <item name="android:layout_width">57dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginStart">22dp</item>
+        <item name="android:layout_marginTop">22dp</item>
+        <item name="android:layout_marginEnd">77dp</item>
+        <item name="android:layout_marginBottom">75dp</item>
+        <item name="android:fontFamily">@font/acme</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#2C2B47</item>
+    </style>
+
+    <style name="textInBox">
+
+    </style>
+</resources>
