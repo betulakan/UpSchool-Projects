@@ -10,4 +10,4 @@ For the layout on the left, I used SpannableString to create different colored t
 
 **My work:**  
 
-![Layout](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/layout.png)
+![Layout](https://github.com/betulakan/UpSchool-Projects/blob/main/Projects/Project%20%231%20-%20Layout%20Exercise%20Project/my_layout.png)
