@@ -1,3 +1,9 @@
+# Tween Animation Exercise Project
+
+
+You can reach this project from the following link.
+https://github.com/betulakan/Android-Tween-Animation-Sample
+
 Case :
 
 Tween animation alpha,scale,translate,rotate özelliklerinden tümünü kullanarak bir XML animasyon dosyası oluşturmak ve animasyonu bir imageview üzerinde başlatmanız gerekmektedir.
