@@ -18,6 +18,3 @@ Sources :
 
 https://developer.android.com/guide/topics/resources/animation-resource#Tween
 
-
-You can reach this project from the following link.
-https://github.com/betulakan/Android-Tween-Animation-Sample
