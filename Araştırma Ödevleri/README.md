@@ -91,7 +91,9 @@ Font family dosyası oluşturmak için **font** klasörüne sağ tıklayıp yeni
 
 - Property Animation ile ilgili olarak objectAnimator ile animator arasındaki farkı kısaca açıklayınız
 
-Cevap: **objectAnimator** belirli bir süre boyunca bir nesnenin belirli bir özelliğini canlandırır. ObjectAnimator'ı temsil eder. 
+Cevap: 
+
+**objectAnimator** belirli bir süre boyunca bir nesnenin belirli bir özelliğini canlandırır. ObjectAnimator'ı temsil eder. 
 
 **animator** ise belirli bir süre boyunca bir animasyonu gerçekleştirir ve ValueAnimator'ı temsil eder.
 
