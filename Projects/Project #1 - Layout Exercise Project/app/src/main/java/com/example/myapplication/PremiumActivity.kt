@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Color.parseColor
 import androidx.appcompat.app.AppCompatActivity
@@ -11,19 +12,21 @@ import androidx.core.text.bold
 import androidx.core.text.color
 import androidx.core.text.scale
 import android.graphics.Color.parseColor
+import android.view.View
+import androidx.databinding.DataBindingUtil
+import com.example.myapplication.databinding.ActivityMainBinding
+import com.example.myapplication.databinding.ActivityPremiumBinding
 
-class PremiumActivity : AppCompatActivity() {
+class PremiumActivity : AppCompatActivity(), View.OnClickListener {
+
+    private lateinit var binding: ActivityPremiumBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_premium)
+        //setContentView(R.layout.activity_premium)
 
-        val monthlyString: TextView = findViewById(R.id.monthlyTextView)
-        val yearlyString: TextView = findViewById(R.id.yearlyTextView)
+        binding = DataBindingUtil.setContentView(this,R.layout.activity_premium)
 
-        val tv1 : TextView=findViewById(R.id.textView6)
-        val tv2 : TextView=findViewById(R.id.textView9)
-        val tv3 : TextView=findViewById(R.id.textView10)
-        val tv4 : TextView=findViewById(R.id.textView11)
 
         val spannableString1 = SpannableStringBuilder()
             .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.darker)){append("$11.99 ")}}
@@ -42,22 +45,23 @@ class PremiumActivity : AppCompatActivity() {
             .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.dark)){append("per year")}}
 
 
+        binding.textView6.text = spannableString1;
+        binding.textView9.text = spannableString2;
+        binding.textView10.text = spannableString3;
+        binding.textView11.text = spannableString4;
+        init()
+    }
 
-        tv1.text = spannableString1
-        tv2.text = spannableString2
-        tv3.text = spannableString3
-        tv4.text = spannableString4
+    private fun init(){
+        binding.button2.setOnClickListener(this)
+    }
 
-        /*
-        val spannableString = SpannableStringBuilder()
-            .bold{scale(proportion = 1.5f) {append("$11.99\n")} }
-            .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.darker)){append("$11.99 ")}}
-            .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.dark)){append("per month\n")}}
-            .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.darker)){append("$143.99 ")}}
-            .bold{color(ContextCompat.getColor(this@PremiumActivity,R.color.dark)){append("per year")}}
-
-        monthlyString.text = spannableString
-
-        yearlyString.text = ("$4.99\n $4.99 per month\n $59.99 per year")*/
+    override fun onClick(view: View?) {
+        when(view?.id){
+            binding.button2.id->{
+                //click listener
+                startActivity(Intent(this@PremiumActivity, MainActivity::class.java))
+            }
+        }
     }
 }
